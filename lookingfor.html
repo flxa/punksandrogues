@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="./stylesheet.css">
+</head>
+<body style="display: block;">
+  <header>
+    <h1>Post a notice</h1>
+    <button class="menuTrigger" title="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Menu</title><g fill="currentColor"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></g></svg>
+    </button>
+  </header>
+
+  I am a
+  <select>
+    <option>[Choose One]</option>
+    <option>Artist</option>
+    <option>Band</option>
+    <option>Band Manager</option>
+    <option>Bassist</option>
+    <option>Blog</option>
+    <option>Button Maker</option>
+    <option>Distro</option>
+    <option>Drummer</option>
+    <option>Festival</option>
+    <option>Graphic Designer</option>
+    <option>Guitarist</option>
+    <option>Label</option>
+    <option>Photographer</option>
+    <option>Place to Sleep</option>
+    <option>Podcast</option>
+    <option>Promoter</option>
+    <option>Radio Show</option>
+    <option>Record Store</option>
+    <option>Recording Engineer</option>
+    <option>Screen Printer</option>
+    <option>Sound Engineer</option>
+    <option>Sticker Maker</option>
+    <option>Tour Booker</option>
+    <option>Vegan Restaurant</option>
+    <option>Venue</option>
+    <option>Vocalist</option>
+    <option>Writer</option>
+    <option>Zine</option>
+  </select>
+  <br>
+  Looking for a
+      <select>
+    <option>[Choose One]</option>
+    <option>Artist</option>
+    <option>Band</option>
+    <option>Band Manager</option>
+    <option>Bassist</option>
+    <option>Blog</option>
+    <option>Button Maker</option>
+    <option>Distro</option>
+    <option>Drummer</option>
+    <option>Festival</option>
+    <option>Graphic Designer</option>
+    <option>Guitarist</option>
+    <option>Label</option>
+    <option>Photographer</option>
+    <option>Place to Sleep</option>
+    <option>Podcast</option>
+    <option>Promoter</option>
+    <option>Radio Show</option>
+    <option>Record Store</option>
+    <option>Recording Engineer</option>
+    <option>Screen Printer</option>
+    <option>Sound Engineer</option>
+    <option>Sticker Maker</option>
+    <option>Tour Booker</option>
+    <option>Vegan Restaurant</option>
+    <option>Venue</option>
+    <option>Vocalist</option>
+    <option>Writer</option>
+    <option>Zine</option>
+  </select>
+  <br>
+  <div>
+    <input type="checkbox" id="addLocation" onclick="showLocation()">
+    <span id="labelLocation">Optional: in a specific location</span>
+    <span id="location">
+      located in
+      <nobr>
+        <select><option>[Country]</option></select>
+        <select><option>[Province/State]</option></select>
+        <select><option>[City]</option></select>
+      </nobr>
+    </span>
+  </div>
+
+  <div>
+    <input type="checkbox" id="addDate" onclick="showDate()">
+    <span id="labelDate">Optional: on a specific date</span>
+    <span id="date">
+      on the date of
+      <nobr>
+        <select><option>[Month]</option></select>
+        <select><option>[Day]</option></select>,
+        <select><option>[Year]</option></select>
+      </nobr>
+    </span>
+  </div>
+
+  <p>
+  </p><div>Add any other details (optional):</div>
+  <textarea style="width: 95%; height: 200px;"></textarea>
+  <p></p>
+
+  <p>
+    <button>Submit</button>
+    <button>Cancel</button>
+  </p>
+
+<!-- Include this on each page a better way -->
+<nav class="menu">
+  <ul>
+    <li><a class="button" href="index.html">Home</a></li>
+    <li><a class="button" href="list.html">Participant List</a></li>
+    <li><a class="button" href="lookingfor.html">Post A Notice</a></li>
+    <li><a class="button" href="todo.html">Future Features</a></li>
+  </ul>
+</nav>
+<script>
+  var menuTrigger = document.querySelector('.menuTrigger');
+  var menu = document.querySelector('.menu');
+  menuTrigger.addEventListener('click', function (e) {
+    menu.classList.toggle('open');
+  });
+</script>
+<!-- End Nav include -->
+</body>
+</html>

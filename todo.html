@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="./stylesheet.css">
+</head>
+<body style="display: block;">
+  <header>
+    <h1>TODO List</h1>
+    <button class="menuTrigger" title="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Menu</title><g fill="currentColor"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></g></svg>
+    </button>
+  </header>
+
+  <p>
+  This app is a work in progress. I basically built this in about 4 hours during a bout of insomnia.
+  </p>
+
+  <p>
+  This is a list of features and improvements that I plan to make:
+  </p>
+
+  <ul>
+    <li>Allow filtering on more than one field</li>
+    <li>After setting a state/province filter, change the city filter list to only have cities in that state/province, etc</li>
+    <li>
+      Give users the ability to post requests to the network: "I am a ___ looking for a ___" with optional parameters "located in _city_, _state_, _country_" and "on the date of __/__/____", where the blanks are populated from options in a <u>drop-down list</u>.
+      <p>Examples:</p>
+      <ul>
+        <li>"I am a <u>band</u> looking for a <u>promoter</u> located in <u>Salt Lake City</u>, <u>Utah</u>, <u>United States</u> on the date of <u>December 24, 2021</u>."</li>
+        <li>"I am a <u>drummer</u> looking for a <u>band</u> located in <u>Little Rock</u>, <u>Arkansas</u>, <u>United States</u>."</li>
+        <li>
+          "I am a <u>zine</u> looking for a <u>artist</u> located <u>anywhere</u>."
+        </li>
+      </ul>
+    </li>
+    <li>
+      Give users a notification when they match the criteria someone posted in a request.
+      <p>
+        For example, if someone is looking for a drummer in Denver, then notify anyone who is a drummer in Denver when they next use the app.
+      </p>
+    </li>
+    <li>
+      Allow non-participants to request to be added to the participant list (and gain access to the site).
+    </li>
+    <li>
+      Make the UI less plain/ugly.
+    </li>
+  </ul>
+  <!-- Include this on each page a better way -->
+<nav class="menu">
+  <ul>
+    <li><a class="button" href="index.html">Home</a></li>
+    <li><a class="button" href="list.html">Participant List</a></li>
+    <li><a class="button" href="lookingfor.html">Post A Notice</a></li>
+    <li><a class="button" href="todo.html">Future Features</a></li>
+  </ul>
+</nav>
+<script>
+  var menuTrigger = document.querySelector('.menuTrigger');
+  var menu = document.querySelector('.menu');
+  menuTrigger.addEventListener('click', function (e) {
+    menu.classList.toggle('open');
+  });
+</script>
+<!-- End Nav include -->
+</body>
+</html>

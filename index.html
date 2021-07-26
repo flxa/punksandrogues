@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link type="text/css" rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome Back</h1>
+    <button class="menuTrigger" title="Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><title>Menu</title><g fill="currentColor"><path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path></g></svg>
+    </button>
+  </header>
+  <p id="match_alerts">
+    You have
+    <a href="notices.html">5 matches</a>.
+    <a class="button" href="notices.html">View Now</a>
+  </p>
+  <p>
+    You can also:
+    <button onclick="window.location='index.html'">View the participant list</button>
+    <button onclick="window.location='resourcelist.html'">View the shared resource list</button>
+    <button onclick="window.location='lookingfor.html'">Post a notice of what you are looking for</button>
+    <button onclick="window.location='editprofile.html'">Update your profile</button>
+  </p>
+  <!-- Include this on each page a better way -->
+  <nav class="menu">
+    <ul>
+      <li><a class="button" href="index.html">Home</a></li>
+      <li><a class="button" href="list.html">Participant List</a></li>
+      <li><a class="button" href="lookingfor.html">Post A Notice</a></li>
+      <li><a class="button" href="todo.html">Future Features</a></li>
+    </ul>
+  </nav>
+  <script>
+    var menuTrigger = document.querySelector('.menuTrigger');
+    var menu = document.querySelector('.menu');
+    menuTrigger.addEventListener('click', function (e) {
+      menu.classList.toggle('open');
+    });
+  </script>
+  <!-- End Nav include -->
+</body>
+</html>
